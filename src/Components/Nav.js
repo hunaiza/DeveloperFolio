@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import "./../../index.css";
+import "./../index.css";
 import { motion } from "framer-motion";
 import { animateScroll as scroll, Link } from "react-scroll";
+import Logo from '../images/Logo.PNG'
 
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
@@ -38,7 +39,7 @@ const Nav = () => {
         }}
       >
         <span className="logo" onClick={() => scroll.scrollToTop()}>
-          &lt; Dev-Junaid /&gt;
+          <img src={Logo} alt="Logo"/>
         </span>
         {/* Mobile Menu Icon */}
         <div className="menu-icon" onClick={handleClick}>
@@ -90,7 +91,7 @@ const Nav = () => {
               offset={offset}
               duration={500}
             >
-              Contact
+              MySelf
             </Link>
           </li>
         </ul>

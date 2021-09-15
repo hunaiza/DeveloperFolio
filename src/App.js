@@ -1,10 +1,16 @@
 import React from "react";
-import Main from "./containers/Main";
+import Nav from './Components/Nav';
+import Home from "./Components/Home";
+import Portfolio from './Components/Portfolio';
+import Myself from './Components/Myself'
 
 function App() {
   return (
-    <div className="App">
-      <Main />
+    <div className="App" style={{overflow: 'hidden'}}>
+      <Nav />
+      <Home />
+      <Portfolio />
+      <Myself />
     </div>
   );
 }

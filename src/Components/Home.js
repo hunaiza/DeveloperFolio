@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "./../../index.css";
-import man from "./../../images/man.svg";
+import "./../index.css";
 import { motion, AnimatePresence } from "framer-motion";
 import { animateScroll as scroll } from "react-scroll";
 
 const contentVariants = {
   initial: {
-    translateY: "100vh",
+    translateY: "200vh",
     opacity: 0,
   },
 
@@ -16,7 +15,6 @@ const contentVariants = {
     transition: {
       duration: 2,
       when: "beforeChildren",
-      // staggerChildren: 0.4,
     },
   },
 };
@@ -77,10 +75,9 @@ const Home = () => {
         initial="initial"
         animate="animate"
       >
-        <h4 className="welcome-content">WELCOME TO MY WORLD</h4>
         <br />
         <h1 className="main-content">
-          Hi, I’m Junaid
+          I’m Hunaiza
           <motion.span
             drag={true}
             dragConstraints={{ left: 0, top: 0, bottom: 0, right: 0 }}
@@ -89,12 +86,14 @@ const Home = () => {
             transition={{ yoyo: Infinity, duration: 1.7 }}
           >
             <span role="img" aria-label="Hand waving">
-              👋
+            💗
             </span>
           </motion.span>{" "}
         </h1>
-        {/* Animate Skill Content */}
-
+        <h1>
+          {" "}
+          from Pakistan{" "}
+        </h1>
         <div className="skill-animation">
           <AnimatePresence>
             {showHeadingOne && (
@@ -105,7 +104,7 @@ const Home = () => {
                 animate="animate"
                 initial="initial"
               >
-                Full Stack Web Developer
+                Microsoft Certified in JS
               </motion.h2>
             )}
           </AnimatePresence>
@@ -119,7 +118,7 @@ const Home = () => {
                 animate="animate"
                 initial="initial"
               >
-                MERN Stack / JAM Stack Developer
+                ReactJs Developer
               </motion.h2>
             )}
           </AnimatePresence>
@@ -138,15 +137,8 @@ const Home = () => {
             )}
           </AnimatePresence>
         </div>
-        {/* // */}
 
-        <h1>
-          {" "}
-          from Pakistan{" "}
-          <span role="img" aria-label="Pakistan Flag">
-            🇵🇰
-          </span>
-        </h1>
+        
 
         <div className="button-wrapper">
           <button
@@ -156,7 +148,7 @@ const Home = () => {
             Contact Me
           </button>
           <a
-            href="https://github.com/developer-junaid"
+            href="https://github.com/hunaiza"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -170,7 +162,7 @@ const Home = () => {
         animate={{ translateY: [-20, 0, -20, 0] }}
         transition={{ yoyo: Infinity, duration: 6 }}
       >
-        <img className="svg" src={man} alt="" />
+        <img className="svg" src="https://scontent.fkhi28-1.fna.fbcdn.net/v/t1.6435-9/123646585_441017340634003_2864667567964278138_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=174925&_nc_eui2=AeH9tio5_vHpHtJu67gQVe0ij3nU7ZfrmWKPedTtl-uZYhcHK5hKDU3YoOxSdXHQADVHzmPtXYZuuy2EZcMKSIjE&_nc_ohc=cKfFQcN1oe8AX9AXXTw&_nc_ht=scontent.fkhi28-1.fna&oh=be4f1ba6bd15768300286f6d6930437e&oe=615F5DC3" style={{  borderRadius: "50%"}} alt="" />
       </motion.div>
     </section>
   );

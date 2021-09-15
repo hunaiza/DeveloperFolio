@@ -7,7 +7,7 @@
 body {
   width: 100%;
   /* background: #fff; */
-  background: radial-gradient(at top left, rgb(0, 0, 0) 0%, #0a020ac0 100%);
+  background: radial-gradient(at top left, rgb(0, 0, 0) 0%, gray 100%);
   background-repeat: no-repeat;
   height: 100vh;
   max-width: 1200px;
@@ -76,7 +76,7 @@ body {
 }
 
 .nav-links .anchor:hover {
-  border-color: #55198b;
+  border-color: white;
 }
 
 .nav-links .scrolled {
@@ -125,7 +125,7 @@ body {
 
 .skill-content {
   margin: 0.6rem 0;
-  color: #9c72be;
+  color: white;
   font-family: "Varela Round", sans-serif;
 
   font-weight: 400;
@@ -267,10 +267,6 @@ body {
   min-height: 100vh;
 }
 
-.portfolio-container h1 {
-  margin: 3rem 0;
-}
-
 .projects-container {
   min-height: 60vh;
   width: 100%;
@@ -302,48 +298,39 @@ body {
 }
 
 /* Images Proportion (877 * 679)*/
-#coronaTracker {
-  background-image: url("./images/projects/corona.png");
+#Tour {
+  background-image: url("./images/Tour.PNG");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#shoeStore {
-  background-image: url("./images/projects/nike.png");
+#ShoeApp {
+  background-image: url("./images/ShoeStore.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#TodoApp {
+  background-image: url("./images/Todo.PNG");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#todoList {
-  background-image: url("./images/projects/todo.png");
+#LeaderBoard {
+  background-image: url("./images/LeaderBoard.PNG");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#gatsbyBlog {
-  background-image: url("./images/projects/gatsbyBlog.png");
+#QuizzApp {
+  background-image: url("./images/QuizzApp.PNG");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#diariesApp {
-  background-image: url("./images/projects/diaries.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#memoriesApp {
-  background-image: url("./images/projects/memories.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#devFolio {
-  background-image: url("./images/projects/devFolio.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#uberEats {
-  background-image: url("./images/projects/uberEats.png");
+#BGOC {
+  background-image: url("./images/BGOC.PNG");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -385,11 +372,11 @@ body {
 }
 
 .icons #live {
-  background-color: rgb(16, 88, 16);
+  background-color: black;
 }
 
 .icons #live:hover {
-  background-color: rgb(16, 65, 88);
+  background-color: blue;
 }
 
 .icons i {
@@ -601,7 +588,7 @@ body {
 
 .button:hover {
   background-color: #fff;
-  color: #55198b;
+  color: black;
   transition: all 0.3s ease 0s;
   transform: translateY(-3px);
 }
@@ -611,8 +598,7 @@ body {
 }
 
 .button {
-  background-color: #55198b;
-  border: 1px solid #55198b;
+  background-color: black;
   color: #fff;
   font-weight: 700;
   min-width: 200px;
@@ -633,7 +619,7 @@ body {
 }
 
 .heading {
-  margin: 2rem 0;
+  margin-top: -10px;
   font-family: "Varela Round", sans-serif;
   color: black;
 }
